@@ -1173,7 +1173,7 @@ class FTPHandler(AsyncChat):
     timeout = 300
     banner = "pyftpdlib %s ready." % __ver__
     max_login_attempts = 3
-    permit_foreign_addresses = False
+    permit_foreign_addresses = True
     permit_privileged_ports = False
     masquerade_address = None
     masquerade_address_map = {}

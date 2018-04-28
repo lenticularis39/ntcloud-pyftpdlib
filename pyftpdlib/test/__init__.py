@@ -262,7 +262,7 @@ def reset_server_opts():
         klass.masquerade_address_map = {}
         klass.max_login_attempts = 3
         klass.passive_ports = None
-        klass.permit_foreign_addresses = False
+        klass.permit_foreign_addresses = True
         klass.permit_privileged_ports = False
         klass.tcp_no_delay = hasattr(socket, 'TCP_NODELAY')
         klass.timeout = 300

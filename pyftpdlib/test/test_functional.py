@@ -1591,7 +1591,7 @@ class TestConfigurableOptions(unittest.TestCase):
             self.server.handler.masquerade_address = None
             self.server.handler.masquerade_address_map = {}
             self.server.handler.permit_privileged_ports = False
-            self.server.handler.permit_foreign_addresses = False
+            self.server.handler.permit_foreign_addresses = True
             self.server.handler.passive_ports = None
             self.server.handler.use_gmt_times = True
             self.server.handler.tcp_no_delay = hasattr(socket, 'TCP_NODELAY')
